@@ -12,8 +12,10 @@ body {
     width: 1900px; /* Ширина макета */
     margin: 0 auto; /* Выравниваем по центру */
     background: #fff1ce; /* Цвет фона правой колонки */ 
+	height:90%
    }
    #header {
+	text-indent: 8px;
     background: #ce9300; /* Цвет фона */
     font-size: 24pt; /* Размер текста */
     font-weight: bold; /* Жирное начертание */
@@ -22,20 +24,34 @@ body {
    }
    #content {
     float: left; /* Обтекание по правому краю */
-    width: 329px; /* Ширина левой колонки */
+    width: 1700px;
+    height: 800px;
     padding: 10px; /* Поля вокруг текста */
     border-right: 1px dashed #183533; /* Линия справа */
     background: #fff1ce; /* Цвет фона левой колонки */
     padding-bottom: 90px;
-    height: 99%;s
    }
    #content p {
     margin-top: 0.3em /* Отступ сверху */
    }
    #sidebar {
     float: left; /* Обтекание по правому краю */
-    width: 480px; /* Ширина */
+    width: 100px; /* Ширина */
     padding: 10px; /* Отступы вокруг текста */
+	/*text-align: right;*/
+   line-height: 2;}
+   #sidebar p{
+    font-size:1.5em;
+   }
+   #sidebar hr{
+	   width:155px;
+	   color:'red';
+	   display: block;
+       height: 1px;
+       border: 0;
+       border-top: 1px solid #ccc;
+       margin: 1em 0;
+       padding: 0; ; 
    }
 * {
   margin: 0;
@@ -57,3 +73,24 @@ body {
    .clear { 
     clear: both; /* Отмена обтекания */ 
    }
+  table.text  {
+    width:  100%; /* Ширина таблицы */
+    border-spacing: 0; /* Расстояние между ячейками */
+   }
+   table.text td {
+    width: 50%; /* Ширина ячеек */
+    vertical-align: top; /* Выравнивание по верхнему краю */
+   }
+   td.rightcol { /* Правая ячейка */ 
+    text-align: right; /* Выравнивание по правому краю */
+   }
+   .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
