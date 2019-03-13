@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel= 'stylesheet' href = 'BBoDsite.css'>
+  <title>Site</title>
+  <script type="text/javascript">
+    setInterval(function () {
+      var today = new Date();
+      document.getElementById('dtText').innerHTML=today;
+    }, 1000);
+  </script>
+ </head>
+ <body>
+  <div id="container">
+   <div id="header">Site</div>
+   <div id="content">
+    <p>style</p>
+   </div>
+   <div id="sidebar">
+    <p><a href="popular.html">link1</a></p>
+    <p><a href="day.html">link2</a></p>
+    <p><a href="apple.html">link3</a></p>
+    <p><a href="ice.html">link4</a></p>
+    <p><a href="hliv.html">link5</a></p>
+   </div>
+   <div class="clear"></div>
+   <div id="footer">&copy; Taras Romaniuk <span id="dtText"></span>
+</div>
+  </div>
+ </body>
+</html>
